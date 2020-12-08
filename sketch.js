@@ -44,11 +44,11 @@ function setup(){
 
     polygon = new Polygon(200,50)
 
-     shot = new Shot(bird.body,{x:200, y:50});
+    shot = new Shot(polygon.body,{x:200, y:50});
 }
 
 function draw(){
-    background(backgroundImg);
+    
     Engine.update(engine);
   
    ground.display();
@@ -70,7 +70,7 @@ function draw(){
     box15.display();
     box16.display();
    
-   slingshot.display();    
+    shot.display();    
 }
 
 function mouseDragged()
@@ -80,7 +80,7 @@ function mouseDragged()
 
 function mouseReleased()
 {
-	launcherObject.fly();
+	polygon.fly();
     // distance=int(dist(stoneObj.x,stoneObj.y,mango1.x,mango1.y));
 }
 

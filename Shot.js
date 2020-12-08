@@ -12,7 +12,7 @@ class Shot{
 		this.bodyA=body
 		this.pointB=anchor
 		this.shot=Constraint.create(options)
-		World.add(world,this.Shot)
+		World.add(world,this.shot)
 	}
 
 	attach(body){
